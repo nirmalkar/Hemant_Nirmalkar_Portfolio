@@ -1,0 +1,39 @@
+@import "fonts";
+$marginLeft:  6vw;
+$AbrilFatface: "AbrilFatface";
+.hero-ht{
+height: 100vh;
+}
+
+.hero-ht-img{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  // width:50vw;
+}
+
+.name{
+  font-family: "AbrilFatface" ,Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  margin-top: 25vh;
+  margin-left:$marginLeft
+}
+
+.desc-w{
+  margin-top: 1vh;
+  padding:2vw 6vw ;
+}
+.my-wrk-lnk{
+  margin-left: $marginLeft;
+  font-weight: 600;
+  font-size: medium;
+  margin-top:10vh;
+}
+.m-social-lnk-toggle{
+  margin-top: 18vh;
+}
+.f-s{
+  font-family:"AbrilFatface",Arial, Helvetica, sans-serif ;
+font-size: 2rem;
+margin-top: 30vh;
+}
