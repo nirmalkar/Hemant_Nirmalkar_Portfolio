@@ -1,6 +1,5 @@
 import React from "react"
 import SEO from "../components/seo"
-import "bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./index.scss"
 import MyImg from '../images/me2.jpg'

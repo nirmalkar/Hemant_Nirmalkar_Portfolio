@@ -15,7 +15,6 @@
     "gatsby-plugin-sharp": "^2.5.3",
     "gatsby-source-filesystem": "^2.2.2",
     "gatsby-transformer-sharp": "^2.4.3",
-    "jquery": "^3.5.0",
     "node-sass": "^4.13.1",
     "popper.js": "^1.16.1",
     "prop-types": "^15.7.2",
