@@ -32,8 +32,41 @@ height: 100vh;
 .m-social-lnk-toggle{
   margin-top: 18vh;
 }
+.m-t-my-skills{
+  margin-top: 30vh;
+}
+.m-t-my-work{
+  margin-top: 7vh;
+  margin-bottom: 30vh;
+}
 .f-s{
   font-family:"AbrilFatface",Arial, Helvetica, sans-serif ;
 font-size: 2rem;
-margin-top: 30vh;
+}
+.img-w-h{
+  width: auto;
+  height: 10rem;
+  border-radius: 5px;
+}
+.my-wrk-txt{
+  font-size: 1.5rem;
+  font-family: "AbrilFatface";
+}
+.con-me-txt{
+  font-family: "AbrilFatface" ,Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  margin-left:$marginLeft
+}
+.con-txt{
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left:$marginLeft
+}
+.con-no{
+  font-weight: 600;
+  font-size: 1rem;
+  margin-left:3rem;
+}
+.m-b{
+margin-bottom: 10rem;
 }
