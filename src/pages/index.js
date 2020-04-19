@@ -76,7 +76,6 @@ const IndexPage = () => (
     <div className="mt-4 m-b">
       <span className="con-txt">Email Addr. </span><span className="con-no">hemantnirmalkar17@gmail.com</span>
     </div>
-    <i class="fab fa-github fa-10x" />
   </div>
 )
 
