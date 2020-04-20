@@ -14,33 +14,33 @@ import Mongo from '../images/mongo.svg'
 import MyWork from '../images/mw.jpg'
 
 const IndexPage = () => (
-  <div>
+  <div className="">
     <SEO title="Home" />
     <div className="row no-gutters">
-      <div className="col-7 hero-ht">
-        <div className="name">Hemant Nirmalkar</div>
+      <div className="col-lg-7 hero-ht">
+        <div className="name name-styles">Hemant Nirmalkar</div>
         <p className="desc-w">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia nesciunt distinctio laudantium illo incidunt corrupti reprehenderit! Ratione, in soluta tenetur aut impedit, odit, ut quasi iure libero dicta adipisci!</p>
-        <p className="my-wrk-lnk "><Link className="link-styles" to="/work"> MY WORK<i class="fas fa-arrow-right  mt-2 ml-2" /></Link></p>
+        <p className="my-wrk-lnk"><Link className="link-styles" to="/work"> MY WORK<i class="fas fa-arrow-right  mt-2 ml-2" /></Link></p>
         <div className="row">
           <div className="col-4 m-social-lnk-toggle">
           </div>
           <div className="col-8 text-right fa-lg m-social-lnk-toggle">
-            <a className="link-styles" href="https://github.com/hemantkumar2" target="_blank">
-              <i class="fab fa-github fa-lg p-3 clk-f-a" />
+            <a className="link-styles img-container" href="https://github.com/hemantkumar2" target="_blank">
+              <i class="fab fa-github fa-lg p-2 p-lg-3 clk-f-a" />
             </a>
             <a className="link-styles" href="" target="_blank">
-              <i class="fab fa-codepen fa-lg p-3 clk-f-a" />
+              <i class="fab fa-codepen fa-lg p-2 p-lg-3 clk-f-a" />
             </a>
             <a className="link-styles" href="https://www.linkedin.com/in/hemant-nirmalkar/" target="_blank">
-              <i class="fab fa-linkedin-in fa-lg p-3 clk-f-a" />
+              <i class="fab fa-linkedin-in fa-lg p-2 p-lg-3 clk-f-a" />
             </a>
             <a className="link-styles" href="https://www.instagram.com/monty_davinci/" target="_blank">
-              <i class="fab fa-instagram fa-lg p-4 clk-f-a" />
+              <i class="fab fa-instagram fa-lg p-3 p-lg-4 clk-f-a" />
             </a>
           </div>
         </div>
       </div>
-      <div className="col-5 ">
+      <div className="d-none d-lg-block col-5 d-n-img">
         <img className="hero-ht-img" src={MyImg} alt="" />
       </div>
     </div>
@@ -67,23 +67,23 @@ const IndexPage = () => (
       </div>
       <div className="col-12 text-center m-t-my-work">
         <p className="f-s">My Work</p>
-        <div className="d-flex justify-content-center">
+        <div className="d-lg-flex justify-content-center">
           <div>
-            <Link className="my-wrk-txt" to="/project"><img className="img-w-h mr-4 mt-5 img-styles" src={MyWork} alt="" />
+            <a className="my-wrk-txt" href="" target="_blank"><img className="img-w-h mr-4 mt-5 img-styles" src={MyWork} alt="" />
               <p>asdf</p>
-            </Link>
+            </a>
           </div>
           <div>
-            <Link className="my-wrk-txt" to="/project">
+            <a className="my-wrk-txt" href="" target="_blank">
               <img className="img-w-h mr-4 mt-5 img-styles" src={MyWork} alt="" />
               <p>asdf</p>
-            </Link>
+            </a>
           </div>
           <div>
-            <Link className="my-wrk-txt" to="/project">
+            <a className="my-wrk-txt" href="" target="_blank">
               <img className="img-w-h mr-4 mt-5 img-styles" src={MyWork} alt="" />
               <p>asdf</p>
-            </Link>
+            </a>
           </div>
         </div>
         <p className="my-wrk-lnk"><Link className="link-styles" to="/work">SEE MORE<i class="fas fa-arrow-right  mt-2 ml-2" /></Link></p>
@@ -93,7 +93,7 @@ const IndexPage = () => (
     <div className="mt-4">
       <span className="con-txt">Contact No </span><span className="con-no">8839948857</span>
     </div>
-    <div className="mt-4 m-b">
+    <div className="mt-4 p-b">
       <span className="con-txt">Email Addr. </span><span className="con-no">hemantnirmalkar17@gmail.com</span>
     </div>
   </div>

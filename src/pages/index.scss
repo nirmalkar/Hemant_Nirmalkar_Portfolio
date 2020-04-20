@@ -4,7 +4,9 @@ $AbrilFatface: "AbrilFatface";
 .hero-ht{
 height: 100vh;
 }
-
+.app-bg{
+  background-color: rgb(27, 28, 32);
+}
 .hero-ht-img{
   margin: 0;
   padding: 0;
@@ -15,8 +17,23 @@ height: 100vh;
 .name{
   font-family: "AbrilFatface" ,Arial, Helvetica, sans-serif;
   font-size: 3rem;
-  margin-top: 25vh;
   margin-left:$marginLeft
+}
+@media all and (min-width: 1024px) {
+  .name{
+    margin-top: 25vh;
+  }
+  .con-no{
+    margin-left:4rem;
+  }
+}
+@media all and (max-width: 1024px) {
+  .name{
+    margin-top: 10vh;
+  }
+  .d-n-img{
+    display: none!important;
+  }
 }
 .clk-f-a{
 cursor: pointer;
@@ -44,11 +61,11 @@ color: black;
   margin-top: 18vh;
 }
 .m-t-my-skills{
-  margin-top: 30vh;
+  margin-top: 10rem;
 }
 .m-t-my-work{
   margin-top: 7vh;
-  margin-bottom: 30vh;
+  margin-bottom: 20vh;
 }
 .f-s{
   font-family:"AbrilFatface",Arial, Helvetica, sans-serif ;
@@ -80,13 +97,13 @@ font-size: 2rem;
 .con-txt{
   font-weight: 600;
   font-size: 1rem;
-  margin-left:$marginLeft
+  margin-left:2rem
 }
 .con-no{
   font-weight: 600;
   font-size: 1rem;
-  margin-left:3rem;
+  margin-left:1rem;
 }
-.m-b{
+.p-b{
 margin-bottom: 10rem;
 }
