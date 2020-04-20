@@ -69,17 +69,21 @@ const IndexPage = () => (
         <p className="f-s">My Work</p>
         <div className="d-flex justify-content-center">
           <div>
-            <Link to="/project"><img className="img-w-h mr-4 mt-5 img-styles" src={MyWork} alt="" /></Link>
-            <p className="my-wrk-txt">asdf</p>
+            <Link className="my-wrk-txt" to="/project"><img className="img-w-h mr-4 mt-5 img-styles" src={MyWork} alt="" />
+              <p>asdf</p>
+            </Link>
           </div>
           <div>
-            <img className="img-w-h mr-4 mt-5 img-styles" src={MyWork} alt="" />
-            <p className="my-wrk-txt">asdf</p>
-
+            <Link className="my-wrk-txt" to="/project">
+              <img className="img-w-h mr-4 mt-5 img-styles" src={MyWork} alt="" />
+              <p>asdf</p>
+            </Link>
           </div>
           <div>
-            <img className="img-w-h mr-4 mt-5 img-styles" src={MyWork} alt="" />
-            <p className="my-wrk-txt">asdf</p>
+            <Link className="my-wrk-txt" to="/project">
+              <img className="img-w-h mr-4 mt-5 img-styles" src={MyWork} alt="" />
+              <p>asdf</p>
+            </Link>
           </div>
         </div>
         <p className="my-wrk-lnk"><Link className="link-styles" to="/work">SEE MORE<i class="fas fa-arrow-right  mt-2 ml-2" /></Link></p>
