@@ -17,14 +17,14 @@ const IndexPage = () => (
   <div className="">
     <SEO title="Home" />
     <div className="row no-gutters">
-      <div className="col-lg-7 hero-ht">
+      <div className="col-xl-7 hero-ht">
         <div className="name name-styles">Hemant Nirmalkar</div>
         <p className="desc-w">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia nesciunt distinctio laudantium illo incidunt corrupti reprehenderit! Ratione, in soluta tenetur aut impedit, odit, ut quasi iure libero dicta adipisci!</p>
         <p className="my-wrk-lnk"><Link className="link-styles" to="/work"> MY WORK<i class="fas fa-arrow-right  mt-2 ml-2" /></Link></p>
-        <div className="row">
-          <div className="col-4 m-social-lnk-toggle">
+        <div className="row no-gutters">
+          <div className="col-4 d-none d-xl-block m-social-lnk-toggle">
           </div>
-          <div className="col-8 text-right fa-lg m-social-lnk-toggle">
+          <div className="col-12 col-lg-8 text-center text-lg-right fa-lg m-social-lnk-toggle">
             <a className="link-styles img-container" href="https://github.com/hemantkumar2" target="_blank">
               <i class="fab fa-github fa-lg p-2 p-lg-3 clk-f-a" />
             </a>
@@ -40,7 +40,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-      <div className="d-none d-lg-block col-5 d-n-img">
+      <div className="d-none d-xl-block col-5">
         <img className="hero-ht-img" src={MyImg} alt="" />
       </div>
     </div>
@@ -91,7 +91,7 @@ const IndexPage = () => (
     </div>
     <div className="con-me-txt">Contact Me</div>
     <div className="mt-4">
-      <span className="con-txt">Contact No </span><span className="con-no">8839948857</span>
+      <span className="con-txt ml-5">Contact No </span><span className="con-no">8839948857</span>
     </div>
     <div className="mt-4 p-b">
       <span className="con-txt">Email Addr. </span><span className="con-no">hemantnirmalkar17@gmail.com</span>
