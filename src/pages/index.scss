@@ -1,9 +1,7 @@
 @import "fonts";
 $marginLeft:  6vw;
 $AbrilFatface: "AbrilFatface";
-.hero-ht{
-height: 100vh;
-}
+
 .app-bg{
   background-color: rgb(27, 28, 32);
 }
@@ -26,6 +24,15 @@ height: 100vh;
   .con-no{
     margin-left:4rem;
   }
+  .m-social-lnk-toggle{
+    margin-top: 18vh;
+  }
+  .m-t-my-skills{
+    margin-top: 10rem;
+  }
+  .hero-ht{
+    height: 100vh;
+    }
 }
 @media all and (max-width: 1024px) {
   .name{
@@ -34,6 +41,15 @@ height: 100vh;
   .d-n-img{
     display: none!important;
   }
+  .m-social-lnk-toggle{
+    margin-top: 8vh;
+  }
+  .m-t-my-skills{
+    margin-top: 1rem;
+  }
+  .hero-ht{
+    height: 40rem;
+    }
 }
 .clk-f-a{
 cursor: pointer;
@@ -56,12 +72,6 @@ color: black;
   font-size: medium;
   margin-top:10vh;
   cursor: pointer;
-}
-.m-social-lnk-toggle{
-  margin-top: 18vh;
-}
-.m-t-my-skills{
-  margin-top: 10rem;
 }
 .m-t-my-work{
   margin-top: 7vh;
