@@ -26,16 +26,16 @@ const IndexPage = () => (
           </div>
           <div className="col-12 col-lg-8 text-center text-lg-right fa-lg m-social-lnk-toggle">
             <a className="link-styles img-container" href="https://github.com/hemantkumar2" target="_blank">
-              <i class="fab fa-github fa-lg p-2 p-lg-3 clk-f-a" />
+              <i class="fab fa-github fa-lg p-3  clk-f-a" />
             </a>
             <a className="link-styles" href="" target="_blank">
-              <i class="fab fa-codepen fa-lg p-2 p-lg-3 clk-f-a" />
+              <i class="fab fa-codepen fa-lg p-3  clk-f-a" />
             </a>
             <a className="link-styles" href="https://www.linkedin.com/in/hemant-nirmalkar/" target="_blank">
-              <i class="fab fa-linkedin-in fa-lg p-2 p-lg-3 clk-f-a" />
+              <i class="fab fa-linkedin-in fa-lg p-3  clk-f-a" />
             </a>
             <a className="link-styles" href="https://www.instagram.com/monty_davinci/" target="_blank">
-              <i class="fab fa-instagram fa-lg p-3 p-lg-4 clk-f-a" />
+              <i class="fab fa-instagram fa-lg p-3  p-lg-4 clk-f-a" />
             </a>
           </div>
         </div>
