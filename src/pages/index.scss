@@ -18,7 +18,17 @@ height: 100vh;
   margin-top: 25vh;
   margin-left:$marginLeft
 }
-
+.clk-f-a{
+cursor: pointer;
+}
+.link-styles{
+text-decoration: none;
+color: black;
+}
+.link-styles:hover{
+  text-decoration: none;
+  color: rgb(70, 66, 66);
+}
 .desc-w{
   margin-top: 1vh;
   padding:2vw 6vw ;
@@ -28,6 +38,7 @@ height: 100vh;
   font-weight: 600;
   font-size: medium;
   margin-top:10vh;
+  cursor: pointer;
 }
 .m-social-lnk-toggle{
   margin-top: 18vh;
@@ -48,9 +59,13 @@ font-size: 2rem;
   height: 10rem;
   border-radius: 5px;
 }
+.img-styles{
+  cursor: pointer;
+}
 .my-wrk-txt{
   font-size: 1.5rem;
   font-family: "AbrilFatface";
+  cursor: pointer;
 }
 .con-me-txt{
   font-family: "AbrilFatface" ,Arial, Helvetica, sans-serif;
