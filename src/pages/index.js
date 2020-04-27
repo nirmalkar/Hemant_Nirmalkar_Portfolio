@@ -11,7 +11,9 @@ import Node from '../images/nodejs.svg'
 import react from '../images/react.svg'
 import Gatsby from '../images/gatsby.svg'
 import Mongo from '../images/mongo.svg'
-import MyWork from '../images/mw.jpg'
+import Unsplash from '../images/unsplash.png'
+import Aim from '../images/aim.png'
+import Dog from '../images/dogList.png'
 
 const IndexPage = () => (
   <div className="">
@@ -69,20 +71,20 @@ const IndexPage = () => (
         <p className="f-s">My Work</p>
         <div className="d-lg-flex justify-content-center">
           <div>
-            <a className="my-wrk-txt" href="" target="_blank"><img className="img-w-h mr-4 mt-5 img-styles" src={MyWork} alt="" />
-              <p>asdf</p>
+            <a className="my-wrk-txt" href="https://brave-austin-0a0588.netlify.app/" target="_blank"><img className="img-w-h mr-4 mt-5 img-styles" src={Unsplash} alt="" />
+              <p>Unsplash Api</p>
             </a>
           </div>
           <div>
-            <a className="my-wrk-txt" href="" target="_blank">
-              <img className="img-w-h mr-4 mt-5 img-styles" src={MyWork} alt="" />
-              <p>asdf</p>
+            <a className="my-wrk-txt" href="https://happy-wozniak-e633ff.netlify.app/dogs" target="_blank">
+              <img className="img-w-h mr-4 mt-5 img-styles" src={Dog} alt="" />
+              <p>Dog List</p>
             </a>
           </div>
           <div>
-            <a className="my-wrk-txt" href="" target="_blank">
-              <img className="img-w-h mr-4 mt-5 img-styles" src={MyWork} alt="" />
-              <p>asdf</p>
+            <a className="my-wrk-txt" href="https://www.aimcareerinstitute.com/" target="_blank">
+              <img className="img-w-h mr-4 mt-5 img-styles" src={Aim} alt="" />
+              <p>Aim Career Institute</p>
             </a>
           </div>
         </div>
@@ -91,10 +93,10 @@ const IndexPage = () => (
     </div>
     <div className="con-me-txt">Contact Me</div>
     <div className="mt-4">
-      <span className="con-txt ml-5">Contact No </span><span className="con-no">8839948857</span>
+      <span className="con-txt ml-lg-5">Contact No </span><span className="con-no">8839948857</span>
     </div>
     <div className="mt-4 p-b">
-      <span className="con-txt">Email Addr. </span><span className="con-no">hemantnirmalkar17@gmail.com</span>
+      <span className=" con-txt ml-lg-5">Email Addr. </span><span className="con-no">hemantnirmalkar17@gmail.com</span>
     </div>
   </div>
 )
