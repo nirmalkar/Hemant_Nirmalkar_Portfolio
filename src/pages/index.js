@@ -37,7 +37,7 @@ const IndexPage = () => (
               <i class="fab fa-linkedin-in fa-lg p-3  clk-f-a" />
             </a>
             <a className="link-styles" href="https://www.instagram.com/monty_davinci/" target="_blank">
-              <i class="fab fa-instagram fa-lg p-3  p-lg-4 clk-f-a" />
+              <i class="fab fa-instagram fa-lg p-3  pr-lg-4 pt-lg-4 clk-f-a" />
             </a>
           </div>
         </div>
