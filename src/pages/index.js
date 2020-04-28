@@ -27,16 +27,16 @@ const IndexPage = () => (
           <div className="col-4 d-none d-xl-block m-social-lnk-toggle">
           </div>
           <div className="col-12 col-lg-8 text-center text-lg-right fa-lg m-social-lnk-toggle">
-            <a className="link-styles img-container" href="https://github.com/hemantkumar2" target="_blank">
+            <a className="link-styles img-container" href="https://github.com/hemantkumar2" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-github fa-lg p-3  clk-f-a" />
             </a>
-            <a className="link-styles" href="" target="_blank">
+            <a className="link-styles" href="https://codepen.io/" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-codepen fa-lg p-3  clk-f-a" />
             </a>
-            <a className="link-styles" href="https://www.linkedin.com/in/hemant-nirmalkar/" target="_blank">
+            <a className="link-styles" href="https://www.linkedin.com/in/hemant-nirmalkar/" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-linkedin-in fa-lg p-3  clk-f-a" />
             </a>
-            <a className="link-styles" href="https://www.instagram.com/monty_davinci/" target="_blank">
+            <a className="link-styles" href="https://www.instagram.com/monty_davinci/" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-instagram fa-lg p-3  pr-lg-4 pt-lg-4 clk-f-a" />
             </a>
           </div>
@@ -50,19 +50,19 @@ const IndexPage = () => (
       <div className="col-12 text-center">
         <p className="f-s">My Skills</p>
         <div className="mt-5">
-          <a href="https://sass-lang.com/" target="_blank">
+          <a href="https://sass-lang.com/" target="_blank" rel="noopener noreferrer">
             <img className="p-4 img-styles" src={Sass} alt="" />
           </a>
-          <a href="https://reactjs.org/" target="_blank">
+          <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
             <img className="p-4 img-styles" src={react} alt="" />
           </a>
-          <a href="https://www.gatsbyjs.org/" target="_blank">
+          <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">
             <img className="p-4 img-styles" src={Gatsby} alt="" />
           </a>
-          <a href="https://nodejs.org/en/" target="_blank">
+          <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">
             <img className="p-4 img-styles" src={Node} alt="" />
           </a>
-          <a href="https://www.mongodb.com/" target="_blank">
+          <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
             <img className="p-4 img-styles" src={Mongo} alt="" />
           </a>
         </div>
@@ -71,18 +71,18 @@ const IndexPage = () => (
         <p className="f-s">My Work</p>
         <div className="d-lg-flex justify-content-center">
           <div>
-            <a className="my-wrk-txt" href="https://brave-austin-0a0588.netlify.app/" target="_blank"><img className="img-w-h mr-4 mt-5 img-styles" src={Unsplash} alt="" />
+            <a className="my-wrk-txt" href="https://brave-austin-0a0588.netlify.app/" target="_blank" rel="noopener noreferrer"><img className="img-w-h mr-4 mt-5 img-styles" src={Unsplash} alt="" />
               <p>Unsplash Api</p>
             </a>
           </div>
           <div>
-            <a className="my-wrk-txt" href="https://happy-wozniak-e633ff.netlify.app/dogs" target="_blank">
+            <a className="my-wrk-txt" href="https://happy-wozniak-e633ff.netlify.app/dogs" target="_blank" rel="noopener noreferrer">
               <img className="img-w-h mr-4 mt-5 img-styles" src={Dog} alt="" />
               <p>Dog List</p>
             </a>
           </div>
           <div>
-            <a className="my-wrk-txt" href="https://www.aimcareerinstitute.com/" target="_blank">
+            <a className="my-wrk-txt" href="https://www.aimcareerinstitute.com/" target="_blank" rel="noopener noreferrer">
               <img className="img-w-h mr-4 mt-5 img-styles" src={Aim} alt="" />
               <p>Aim Career Institute</p>
             </a>
