@@ -13,7 +13,7 @@ import Gatsby from '../images/gatsby.svg'
 import Mongo from '../images/mongo.svg'
 import Unsplash from '../images/unsplash.png'
 import Aim from '../images/aim.png'
-import Dog from '../images/dogList.png'
+import Dog from '../images/doglist.png'
 
 const IndexPage = () => (
   <div className="">
