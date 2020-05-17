@@ -1,119 +1,153 @@
 @import "fonts";
-$marginLeft:  6vw;
+$marginLeft: 6vw;
 $AbrilFatface: "AbrilFatface";
 
-.app-bg{
+.app-bg {
   background-color: rgb(27, 28, 32);
 }
-.hero-ht-img{
+.hero-ht-img {
   margin: 0;
   padding: 0;
   height: 100vh;
   // width:50vw;
 }
 
-.name{
-  font-family: "AbrilFatface" ,Arial, Helvetica, sans-serif;
+.name {
+  font-family: "AbrilFatface", Arial, Helvetica, sans-serif;
   font-size: 3rem;
-  margin-left:$marginLeft
+  margin-left: $marginLeft;
 }
 @media all and (min-width: 1024px) {
-  .name{
+  .name {
     margin-top: 25vh;
   }
-  .con-no{
-    margin-left:4rem;
+  .con-no {
+    margin-left: 4rem;
   }
-  .m-social-lnk-toggle{
+  .m-social-lnk-toggle {
     margin-top: 18vh;
   }
-  .m-t-my-skills{
+  .m-t-my-skills {
     margin-top: 10rem;
   }
-  .hero-ht{
+  .hero-ht {
     height: 100vh;
-    }
+  }
 }
 @media all and (max-width: 1024px) {
-  .name{
+  .name {
     margin-top: 10vh;
   }
-  .d-n-img{
-    display: none!important;
+  .d-n-img {
+    display: none !important;
   }
-  .m-social-lnk-toggle{
+  .m-social-lnk-toggle {
     margin-top: 8vh;
   }
-  .m-t-my-skills{
+  .m-t-my-skills {
     margin-top: 1rem;
   }
-  .hero-ht{
+  .hero-ht {
     height: 40rem;
-    }
+  }
 }
-.clk-f-a{
-cursor: pointer;
+.clk-f-a {
+  cursor: pointer;
 }
-.link-styles{
-text-decoration: none;
-color: black;
+.link-styles {
+  text-decoration: none;
+  color: black;
 }
-.link-styles:hover{
+.link-styles:hover {
   text-decoration: none;
   color: rgb(70, 66, 66);
 }
-.desc-w{
+.desc-w {
   margin-top: 1vh;
-  padding:2vw 6vw ;
+  padding: 2vw 6vw;
 }
-.my-wrk-lnk{
+.my-wrk-lnk {
   margin-left: $marginLeft;
   font-weight: 600;
   font-size: medium;
-  margin-top:10vh;
+  margin-top: 10vh;
   cursor: pointer;
 }
-.m-t-my-work{
+.m-t-my-work {
   margin-top: 7vh;
   margin-bottom: 20vh;
 }
-.f-s{
-  font-family:"AbrilFatface",Arial, Helvetica, sans-serif ;
-font-size: 2rem;
+.f-s {
+  font-family: "AbrilFatface", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
 }
-.img-w-h{
+.img-w-h {
   width: auto;
   height: 10rem;
   border-radius: 5px;
 }
-.img-styles{
+.img-styles {
   cursor: pointer;
 }
-.my-wrk-txt{
+.my-wrk-txt {
   font-size: 1.5rem;
   font-family: "AbrilFatface";
   cursor: pointer;
   color: black;
 }
-.my-wrk-txt:hover{
+.my-wrk-txt:hover {
   text-decoration: none;
   color: rgb(70, 66, 66);
 }
-.con-me-txt{
-  font-family: "AbrilFatface" ,Arial, Helvetica, sans-serif;
+.con-me-txt {
+  font-family: "AbrilFatface", Arial, Helvetica, sans-serif;
   font-size: 3rem;
-  margin-left:$marginLeft
+  margin-left: $marginLeft;
 }
-.con-txt{
+.con-txt {
   font-weight: 600;
   font-size: 1rem;
   // margin-left:2rem
 }
-.con-no{
+.con-no {
   font-weight: 600;
   font-size: 1rem;
-  margin-left:2rem;
+  margin-left: 1em;
 }
-.p-b{
-margin-bottom: 10rem;
+.p-b {
+  margin-bottom: 7em;
+}
+
+@media all and (min-width: 299px) and (max-device-width: 499px) {
+  .m-l {
+    margin-left: 2rem;
+  }
+}
+@media all and (min-width: 500px) and (max-device-width: 719px) {
+  .m-l {
+    margin-left: 2.5rem;
+  }
+}
+@media all and (min-width: 720px) and (max-device-width: 1024px) {
+  .m-l {
+    margin-left: 3.5rem;
+  }
+}
+@media all and (min-width: 1024px) and (max-device-width: 1600px) {
+  .m-l {
+    margin-left: 4.8rem;
+  }
+}
+.con-me-txt-mob {
+  font-family: "AbrilFatface", Arial, Helvetica, sans-serif;
+  font-size: 2em;
+}
+.con-txt-mob {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.con-no-mob {
+  color: black;
+  font-weight: 200;
+  font-size: 1rem;
 }
