@@ -69,8 +69,15 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     >
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-      <meta name="viewport" content="width=device-width, user-scalable=no"></meta>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      />
+      <meta
+        name="viewport"
+        content="width=device-width, user-scalable=no"
+      ></meta>
+      <title>Hemant Nirmalkar | Portfolio</title>
     </Helmet>
   )
 }
