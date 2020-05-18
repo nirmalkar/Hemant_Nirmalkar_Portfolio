@@ -90,7 +90,7 @@ const IndexPage = () => (
           <p className="f-s">My Skills</p>
         </Fade>
         <div className="mt-5">
-          <Flip bottom>
+          <Fade up>
             <a
               href="https://sass-lang.com/"
               target="_blank"
@@ -98,6 +98,8 @@ const IndexPage = () => (
             >
               <img className="p-4 img-styles" src={Sass} alt="" />
             </a>
+          </Fade>
+          <Fade up>
             <a
               href="https://reactjs.org/"
               target="_blank"
@@ -105,6 +107,8 @@ const IndexPage = () => (
             >
               <img className="p-4 img-styles" src={react} alt="" />
             </a>
+          </Fade>
+          <Fade up>
             <a
               href="https://www.gatsbyjs.org/"
               target="_blank"
@@ -112,6 +116,8 @@ const IndexPage = () => (
             >
               <img className="p-4 img-styles" src={Gatsby} alt="" />
             </a>
+          </Fade>
+          <Fade up>
             <a
               href="https://nodejs.org/en/"
               target="_blank"
@@ -119,6 +125,8 @@ const IndexPage = () => (
             >
               <img className="p-4 img-styles" src={Node} alt="" />
             </a>
+          </Fade>
+          <Fade up>
             <a
               href="https://www.mongodb.com/"
               target="_blank"
@@ -126,7 +134,7 @@ const IndexPage = () => (
             >
               <img className="p-4 img-styles" src={Mongo} alt="" />
             </a>
-          </Flip>
+          </Fade>
         </div>
       </div>
       <div className="col-12 text-center m-t-my-work">
