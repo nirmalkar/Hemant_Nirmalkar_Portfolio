@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import favicon from "../images/lo.png"
+
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -73,6 +75,7 @@ function SEO({ description, lang, meta, title }) {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
       />
+      <link rel="icon" href={favicon} />
       <meta
         name="viewport"
         content="width=device-width, user-scalable=no"
