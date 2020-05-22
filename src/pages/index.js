@@ -7,7 +7,6 @@ import Flip from "react-reveal/Flip"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "./index.scss"
 
-import MyImg from "../images/me2.jpg"
 import Sass from "../images/sass.svg"
 import Node from "../images/nodejs.svg"
 import react from "../images/react.svg"
@@ -21,17 +20,17 @@ const IndexPage = () => (
   <div className="">
     <SEO title="Home" />
     <div className="row no-gutters">
-      <div className="col-xl-7 hero-ht">
-        <Fade up>
+      <div className="col-xl-7 hero-ht mt-4 mt-lg-0">
+        <Fade up duration={2000}>
           <div className="name name-styles">Hemant Nirmalkar</div>
           <p className="desc-w">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            mollitia nesciunt distinctio laudantium illo incidunt corrupti
-            reprehenderit! Ratione, in soluta tenetur aut impedit, odit, ut
-            quasi iure libero dicta adipisci!
+            Hey there! This is Hemant, I'm a Fullstack developer. I primarily
+            work in Javascript. I enjoy solving problems, building logics &
+            designing stuffs. I like watching series, tech videos and listening
+            music.
           </p>
         </Fade>
-        <Fade up>
+        <Fade up duration={2000}>
           <p className="my-wrk-lnk">
             <Link className="link-styles" to="/work">
               {" "}
@@ -41,9 +40,9 @@ const IndexPage = () => (
           </p>
         </Fade>
         <div className="row no-gutters">
-          <div className="col-4 d-none d-xl-block m-social-lnk-toggle"></div>
-          <Fade up>
-            <div className="col-12 col-lg-8 text-center text-lg-right fa-lg m-social-lnk-toggle">
+          <div className="col-4 d-none d-xl-block"></div>
+          <Fade up duration={2000}>
+            <div className="col-12 col-lg-8 text-center text-lg-right m-social-lnk-toggle">
               <a
                 className="link-styles img-container"
                 href="https://github.com/hemantkumar2"
@@ -80,69 +79,97 @@ const IndexPage = () => (
           </Fade>
         </div>
       </div>
-      <div className="d-none d-xl-block col-5">
-        <img className="hero-ht-img" src={MyImg} alt="" />
-      </div>
+      <div
+        className="d-none d-xl-block col-5 img"
+        role="img"
+        aria-label="Hey it's me!"
+        title="This is Colorful me, I'm looking good ain't I ?"
+      ></div>
     </div>
     <div className="row no-gutters m-t-my-skills">
       <div className="col-12 text-center">
-        <Fade up>
+        <Fade up duration={2000}>
           <p className="f-s">My Skills</p>
         </Fade>
         <div className="mt-5">
-          <Fade up>
+          <Fade up duration={2000}>
             <a
               href="https://sass-lang.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="p-4 img-styles" src={Sass} alt="" />
+              <img
+                className="p-4 img-styles img-clr"
+                style={{ height: "7.3em" }}
+                src={Sass}
+                alt=""
+              />
             </a>
           </Fade>
-          <Fade up>
+          <Fade up duration={2000}>
             <a
               href="https://reactjs.org/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="p-4 img-styles" src={react} alt="" />
+              <img
+                className="p-4 img-styles img-clr"
+                style={{ height: "7.3em" }}
+                src={react}
+                alt=""
+              />
             </a>
           </Fade>
-          <Fade up>
+          <Fade up duration={2000}>
             <a
               href="https://www.gatsbyjs.org/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="p-4 img-styles" src={Gatsby} alt="" />
+              <img
+                className="p-4 img-styles img-clr"
+                style={{ height: "7.3em" }}
+                src={Gatsby}
+                alt=""
+              />
             </a>
           </Fade>
-          <Fade up>
+          <Fade up duration={2000}>
             <a
               href="https://nodejs.org/en/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="p-4 img-styles" src={Node} alt="" />
+              <img
+                className="p-4 img-styles img-clr"
+                style={{ height: "7.3em" }}
+                src={Node}
+                alt=""
+              />
             </a>
           </Fade>
-          <Fade up>
+          <Fade up duration={2000}>
             <a
               href="https://www.mongodb.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="p-4 img-styles" src={Mongo} alt="" />
+              <img
+                className="p-4 img-styles img-clr"
+                style={{ height: "7.3em" }}
+                src={Mongo}
+                alt=""
+              />
             </a>
           </Fade>
         </div>
       </div>
       <div className="col-12 text-center m-t-my-work">
-        <Fade up>
+        <Fade up duration={2000}>
           <p className="f-s">My Work</p>
         </Fade>
         <div className="d-lg-flex justify-content-center">
-          <Flip bottom>
+          <Flip bottom duration={2000}>
             <div>
               <a
                 className="my-wrk-txt"
@@ -151,7 +178,7 @@ const IndexPage = () => (
                 rel="noopener noreferrer"
               >
                 <img
-                  className="img-w-h mr-4 mt-5 img-styles"
+                  className="img-w-h mr-lg-4 mt-5 img-styles crd-shd"
                   src={Unsplash}
                   alt=""
                 />
@@ -159,16 +186,16 @@ const IndexPage = () => (
               </a>
             </div>
           </Flip>
-          <Flip bottom>
+          <Flip bottom duration={2000}>
             <div>
               <a
-                className="my-wrk-txt"
+                className="my-wrk-txt d-none d-lg-block"
                 href="https://happy-wozniak-e633ff.netlify.app/dogs"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  className="img-w-h mr-4 mt-5 img-styles"
+                  className="img-w-h mr-lg-4 mt-5 img-styles crd-shd"
                   src={Dog}
                   alt=""
                 />
@@ -176,16 +203,16 @@ const IndexPage = () => (
               </a>
             </div>
           </Flip>
-          <Flip bottom>
+          <Flip bottom duration={2000}>
             <div>
               <a
-                className="my-wrk-txt"
+                className="my-wrk-txt d-none d-lg-block"
                 href="https://www.aimcareerinstitute.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  className="img-w-h mr-4 mt-5 img-styles"
+                  className="img-w-h mt-5 img-styles crd-shd"
                   src={Aim}
                   alt=""
                 />
@@ -194,7 +221,7 @@ const IndexPage = () => (
             </div>
           </Flip>
         </div>
-        <Fade up>
+        <Fade up duration={2000}>
           <p className="my-wrk-lnk">
             <Link className="link-styles" to="/work">
               SEE MORE
@@ -204,16 +231,14 @@ const IndexPage = () => (
         </Fade>
       </div>
     </div>
-    <Fade bottom>
+    <Fade bottom duration={2000}>
       <div className="d-none d-lg-block">
         <div className="con-me-txt">Contact Me</div>
         <div className="mt-4">
-          <span className="con-txt m-l">Contact No </span>
-          <span className="con-no">8839948857</span>
+          <span className="con-no m-l">+91-8839948857</span>
         </div>
         <div className="mt-4 p-b">
-          <span className=" con-txt m-l">Email Addr. </span>
-          <span className="con-no">hemantnirmalkar17@gmail.com</span>
+          <span className="con-no m-l">hemantnirmalkar17@gmail.com</span>
         </div>
       </div>
       <div className="d-lg-none text-center">
@@ -222,11 +247,9 @@ const IndexPage = () => (
         </div>
         <div className="con-me-txt-mob">Contact Me</div>
         <div className="mt-4">
-          <div className="con-txt-mob">Contact No </div>
           <div className="con-no-mob mt-3">+91-8839948857</div>
         </div>
         <div className="mt-4 p-b">
-          <div className="con-txt-mob">Email</div>
           <div className="con-no-mob mt-3">hemantnirmalkar17@gmail.com</div>
         </div>
       </div>

@@ -21,6 +21,13 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            social {
+              github
+              codepen
+              linkedin
+              twitter
+              facebook
+            }
           }
         }
       }
@@ -34,8 +41,8 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      // title={title}
-      // titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={title}
+      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -75,12 +82,12 @@ function SEO({ description, lang, meta, title }) {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
       />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap"
+        rel="stylesheet"
+      ></link>
       <link rel="icon" href={favicon} />
-      <meta
-        name="viewport"
-        content="width=device-width, user-scalable=no"
-      ></meta>
-      <title>Hemant Nirmalkar | Portfolio</title>
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
     </Helmet>
   )
 }
