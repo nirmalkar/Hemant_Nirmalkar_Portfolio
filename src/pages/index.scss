@@ -9,7 +9,6 @@ $AbrilFatface: "AbrilFatface";
   margin: 0;
   padding: 0;
   height: 100vh;
-  // width:50vw;
 }
 .img {
   background-image: url("../images/me2.jpg");
@@ -20,6 +19,11 @@ $AbrilFatface: "AbrilFatface";
   filter: grayscale(100%);
   transition: 0.3s filter ease-in;
 }
+.social-styles {
+  border-radius: 40% !important;
+  background-color: #fff;
+  box-shadow: 0 1.55rem 1.55rem -1.55rem rgba(0, 0, 0, 0.09);
+}
 .img:hover {
   filter: grayscale(0%);
 }
@@ -29,11 +33,7 @@ $AbrilFatface: "AbrilFatface";
   margin-left: $marginLeft;
 }
 .crd-shd {
-  filter: grayscale(100%);
   transition: 0.4s filter ease-in;
-}
-.crd-shd:hover {
-  filter: grayscale(0%);
   border-radius: 6px !important;
   background-color: #fff;
   box-shadow: 0 1.55rem 1.55rem -1.25rem rgba(0, 0, 0, 0.09);
@@ -46,7 +46,7 @@ $AbrilFatface: "AbrilFatface";
     margin-left: 4rem;
   }
   .m-social-lnk-toggle {
-    margin-top: 25vh;
+    margin-top: 12em;
   }
   .m-t-my-skills {
     margin-top: 10rem;
@@ -105,14 +105,12 @@ $AbrilFatface: "AbrilFatface";
   font-size: 2rem;
 }
 .img-clr {
-  filter: grayscale(100%);
   transition: 0.4s all ease-in;
+  border-radius: 40% !important;
+  background-color: #fff;
 }
 .img-clr:hover {
-  filter: grayscale(0%);
-  border-radius: 50% !important;
-  background-color: #fff;
-  box-shadow: 0 1.55rem 1.55rem -1.25rem rgba(0, 0, 0, 0.09);
+  box-shadow: 0 1.55rem 1.55rem -1.55rem rgba(0, 0, 0, 0.09);
 }
 .img-w-h {
   width: auto;

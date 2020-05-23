@@ -35,7 +35,7 @@ const IndexPage = () => (
             <Link className="link-styles" to="/work">
               {" "}
               MY WORK
-              <i class="fas fa-arrow-right  mt-2 ml-2" />
+              <i className="fas fa-arrow-right  mt-2 ml-2" />
             </Link>
           </p>
         </Fade>
@@ -49,7 +49,9 @@ const IndexPage = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fab fa-github fa-lg p-3  clk-f-a" />
+                <span className="social-styles">
+                  <i className="fab fa-github fa-lg p-3  clk-f-a" />
+                </span>
               </a>
               <a
                 className="link-styles"
@@ -57,7 +59,7 @@ const IndexPage = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fab fa-codepen fa-lg p-3  clk-f-a" />
+                <i className="fab fa-codepen fa-lg p-3  clk-f-a" />
               </a>
               <a
                 className="link-styles"
@@ -65,7 +67,7 @@ const IndexPage = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fab fa-linkedin-in fa-lg p-3  clk-f-a" />
+                <i className="fab fa-linkedin-in fa-lg p-3  clk-f-a" />
               </a>
               <a
                 className="link-styles"
@@ -73,7 +75,7 @@ const IndexPage = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i class="fab fa-instagram fa-lg p-3  pr-lg-4 pt-lg-4 clk-f-a" />
+                <i className="fab fa-instagram fa-lg p-3  pr-lg-4 pt-lg-4 clk-f-a" />
               </a>
             </div>
           </Fade>
@@ -225,7 +227,7 @@ const IndexPage = () => (
           <p className="my-wrk-lnk">
             <Link className="link-styles" to="/work">
               SEE MORE
-              <i class="fas fa-arrow-right  mt-2 ml-2" />
+              <i className="fas fa-arrow-right  mt-2 ml-2" />
             </Link>
           </p>
         </Fade>
