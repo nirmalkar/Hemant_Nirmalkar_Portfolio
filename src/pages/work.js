@@ -17,6 +17,9 @@ const SecondPage = () => {
     }
     fetchData()
   }, [])
+  console.log(gitRepos)
+  let alp = search.split("")
+  console.log(typeof alp)
   return (
     <>
       <SEO title="Work" />
@@ -33,17 +36,41 @@ const SecondPage = () => {
       <div className="container">
         <div className="row">
           {gitRepos
-            .filter(item => item.name.split("").toString().includes("a"))
+            .filter(item =>
+              item.name
+                .split("")
+                .toString()
+                .includes(alp ? alp : "")
+            )
             .map((repo, i) => {
               return (
-                <div className="col-4" key={i}>
+                <div className="col-12 col-md-6 col-lg-4" key={i}>
                   <div className="card m-2" style={{ width: "18rem" }}>
                     <div className="card-body">
                       <h5 class="card-title">{repo.name}</h5>
-                      <p>GIT URL {repo.git_url}</p>
-                      <p>Homepage {repo.homepage}</p>
-                      <p>GIT URL {repo.url}</p>
-                      <p>GIT URL {repo.description}</p>
+                      <p>
+                        GITHUB REPO URL &nbsp;-
+                        <a href={repo.html_url} target="_blank">
+                          &nbsp;Link
+                        </a>
+                      </p>
+                      <p>
+                        Project URL&nbsp;-
+                        <a href={repo.homepage} target="_blank">
+                          &nbsp;Link
+                        </a>
+                      </p>
+                      <p>
+                        DESCRIPTION&nbsp;-
+                        <span
+                          style={{ fontSize: ".9rem", letterSpacing: ".1em" }}
+                        >
+                          &nbsp;
+                          {repo.description
+                            ? repo.description
+                            : "No description available"}
+                        </span>
+                      </p>
                     </div>
                   </div>
                 </div>
