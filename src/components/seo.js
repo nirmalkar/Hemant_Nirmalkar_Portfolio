@@ -86,6 +86,12 @@ function SEO({ description, lang, meta, title }) {
         href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500;700&display=swap"
         rel="stylesheet"
       ></link>
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous"
+      ></link>
       <link rel="icon" href={favicon} />
       <meta name="viewport" content="width=device-width, user-scalable=no" />
     </Helmet>
