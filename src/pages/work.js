@@ -4,6 +4,7 @@ import { capitalCase } from "change-case"
 
 import "./work.scss"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 const SecondPage = () => {
   const [gitRepos, setGitRepos] = useState([])
@@ -30,14 +31,20 @@ const SecondPage = () => {
   return (
     <>
       <SEO title="Work" />
+      <span>
+        <Link to="/">
+          <i class="fas fa-arrow-left fa-lg mt-4 ml-4 mt-md-5 ml-md-5 text-dark"></i>
+        </Link>
+      </span>
       <div
-        style={{ width: "15em", margin: " 2em auto" }}
-        className="input-group"
+        style={{ width: "15em", margin: "auto" }}
+        className="input-group mb-5"
       >
         <input
           type="text"
           className="form-control"
           onChange={e => setSearch(e.target.value)}
+          placeholder="Search"
         />
       </div>
       {!gitRepos.length ? (
