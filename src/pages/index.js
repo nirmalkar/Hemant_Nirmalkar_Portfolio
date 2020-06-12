@@ -102,7 +102,7 @@ const IndexPage = () => (
             >
               <img
                 className="p-4 img-styles img-clr"
-                style={{ height: "7.3em" }}
+                style={{ height: "6.9em" }}
                 src={Sass}
                 alt=""
               />
@@ -116,7 +116,7 @@ const IndexPage = () => (
             >
               <img
                 className="p-4 img-styles img-clr"
-                style={{ height: "7.3em" }}
+                style={{ height: "6.9em" }}
                 src={react}
                 alt=""
               />
@@ -130,7 +130,7 @@ const IndexPage = () => (
             >
               <img
                 className="p-4 img-styles img-clr"
-                style={{ height: "7.3em" }}
+                style={{ height: "6.9em" }}
                 src={Gatsby}
                 alt=""
               />
@@ -144,7 +144,7 @@ const IndexPage = () => (
             >
               <img
                 className="p-4 img-styles img-clr"
-                style={{ height: "7.3em" }}
+                style={{ height: "6.9em" }}
                 src={Node}
                 alt=""
               />
@@ -158,7 +158,7 @@ const IndexPage = () => (
             >
               <img
                 className="p-4 img-styles img-clr"
-                style={{ height: "7.3em" }}
+                style={{ height: "6.9em" }}
                 src={Mongo}
                 alt=""
               />
