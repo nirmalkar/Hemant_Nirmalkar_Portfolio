@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react"
-import "bootstrap/dist/css/bootstrap.min.css"
 import axios from "axios"
+import { capitalCase } from "change-case"
 
+import "./work.scss"
 import SEO from "../components/seo"
 
 const SecondPage = () => {
@@ -18,14 +19,19 @@ const SecondPage = () => {
     }
     fetchData()
   }, [])
+  let searchChar = search.split("")
+  const loader = (
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  )
   console.log(gitRepos)
-  let alp = search.split("")
-  console.log(typeof alp)
   return (
     <>
       <SEO title="Work" />
       <div
-        style={{ width: "20em", margin: " 2em auto" }}
+        style={{ width: "15em", margin: " 2em auto" }}
         className="input-group"
       >
         <input
@@ -34,51 +40,61 @@ const SecondPage = () => {
           onChange={e => setSearch(e.target.value)}
         />
       </div>
-      <div className="container">
-        <div className="row">
-          {gitRepos
-            .filter(item =>
-              item.name
-                .split("")
-                .toString()
-                .includes(alp ? alp : "")
-            )
-            .map((repo, i) => {
-              return (
-                <div className="col-12 col-md-6 col-lg-4" key={i}>
-                  <div className="card m-2" style={{ width: "18rem" }}>
-                    <div className="card-body">
-                      <h5 class="card-title">{repo.name}</h5>
-                      <p>
-                        GITHUB REPO URL &nbsp;-
-                        <a href={repo.html_url} target="_blank">
-                          &nbsp;Link
-                        </a>
-                      </p>
-                      <p>
-                        Project URL&nbsp;-
-                        <a href={repo.homepage} target="_blank">
-                          &nbsp;Link
-                        </a>
-                      </p>
-                      <p>
-                        DESCRIPTION&nbsp;-
-                        <span
-                          style={{ fontSize: ".9rem", letterSpacing: ".1em" }}
+      {!gitRepos.length ? (
+        loader
+      ) : (
+        <div className="container">
+          <div className="card-columns">
+            {gitRepos
+              .filter(item =>
+                item.name
+                  .split("")
+                  .toString()
+                  .includes(searchChar ? searchChar : "")
+              )
+              .map((repo, i) => {
+                return (
+                  <div key={i}>
+                    <div className="card border-0 m-2 mx-auto shadow-sm">
+                      <div className="card-body">
+                        <h5 class="card-title">{capitalCase(repo.name)}</h5>
+                        <p>
+                          <span
+                            style={{
+                              fontSize: ".9rem",
+                            }}
+                          >
+                            &nbsp;
+                            {repo.description
+                              ? repo.description
+                              : "No description available"}
+                          </span>
+                        </p>
+                        <a
+                          data-toggle="tooltip"
+                          className="btn btn-dark mr-2"
+                          href={repo.homepage}
+                          target="_blank"
+                          data-placement="top"
+                          title="Tooltip on top"
                         >
-                          &nbsp;
-                          {repo.description
-                            ? repo.description
-                            : "No description available"}
-                        </span>
-                      </p>
+                          Project
+                        </a>
+                        <a
+                          className="btn btn-light"
+                          href={repo.html_url}
+                          target="_blank"
+                        >
+                          <div>Github</div>
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-              )
-            })}
+                )
+              })}
+          </div>
         </div>
-      </div>
+      )}
     </>
   )
 }
