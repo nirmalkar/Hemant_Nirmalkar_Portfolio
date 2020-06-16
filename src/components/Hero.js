@@ -66,7 +66,7 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-instagram fa-lg p-4  pr-lg-5 pt-lg-5 clk-f-a" />
+                <i className="fab fa-instagram fa-lg p-4  pr-lg-0 pt-lg-0 clk-f-a" />
               </a>
             </div>
           </Fade>

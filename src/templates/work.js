@@ -1,34 +1,16 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { Link } from "gatsby"
 
 import SEO from "../components/seo"
+import { ThemeProvider } from "../contexts/themeContext"
 
-import WorkCard from "./WorkCard"
-
-import "./work.scss"
+// import "./work.scss"
+import "../styles/scss/main.scss"
+import WorkBody from "./WorkBody"
 
 const WorkPageTemplate = ({ pageContext: { repositories } }) => {
-  const [repos, setRepos] = useState([])
-  const [search, setSearch] = useState("")
-
-  useEffect(() => {
-    setRepos(repositories)
-  }, [repositories])
-
-  const renderRepoCards = () => {
-    if (search) {
-      return repos
-        .filter(repo => repo.name.includes(search))
-        .map((repo, i) => <WorkCard key={i} index={i} repo={repo} />)
-    } else {
-      return repositories.map((repo, i) => (
-        <WorkCard key={i} index={i} repo={repo} />
-      ))
-    }
-  }
-
   return (
-    <>
+    <ThemeProvider>
       <SEO title="Work" />
       <br />
       <Link to="/">
@@ -36,22 +18,8 @@ const WorkPageTemplate = ({ pageContext: { repositories } }) => {
           <i class="fas fa-arrow-left" />
         </span>
       </Link>
-      <div className="container pt-5">
-        <div className="row">
-          <div className="col-md-4 offset-md-4">
-            <div className="input-group mb-5">
-              <input
-                type="text"
-                className="form-control"
-                onChange={e => setSearch(e.target.value)}
-                placeholder="Search"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="card-columns">{renderRepoCards()}</div>
-      </div>
-    </>
+      <WorkBody repositories={repositories} />
+    </ThemeProvider>
   )
 }
 
