@@ -8,7 +8,7 @@ const Hero = () => {
   const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext)
   return (
     <div className="row no-gutters">
-      <div className="col-xl-7 hero-ht mt-4 mt-lg-0">
+      <div className="col-xl-7 hero-ht mt-2 mt-lg-0">
         <label class="switch m-2">
           <input onChange={() => setIsDarkTheme()} type="checkbox" />
           <span class="slider round"></span>
