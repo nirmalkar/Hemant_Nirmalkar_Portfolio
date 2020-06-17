@@ -1,10 +1,14 @@
-.light {
+.bg-white {
   transition: 0.4s;
-  background-color: #ffffff;
+  background-color: white;
 }
 .dark {
   transition: 0.4s;
-  background-color: rgb(30, 30, 30) !important;
+  background-color: rgb(15, 15, 15) !important;
+}
+.light {
+  transition: 0.4s;
+  color: #deecee !important;
 }
 .black {
   color: rgb(0, 0, 0);

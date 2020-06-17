@@ -9,7 +9,7 @@ const Footer = () => {
     <Fade bottom duration={2000}>
       <div
         className={
-          isDarkTheme ? "d-none d-lg-block p-5 black" : "d-none d-lg-block p-5"
+          isDarkTheme ? "d-none d-lg-block p-5 light" : "d-none d-lg-block p-5"
         }
       >
         <div className="con-me-txt">Contact Me</div>
@@ -23,7 +23,7 @@ const Footer = () => {
       <div
         className={
           isDarkTheme
-            ? "d-lg-none text-center p-5 black"
+            ? "d-lg-none text-center p-5 light"
             : "d-lg-none text-center p-5"
         }
       >

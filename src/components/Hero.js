@@ -14,10 +14,10 @@ const Hero = () => {
           <span class="slider round"></span>
         </label>
         <Fade up duration={2000}>
-          <div className={isDarkTheme ? "name  black" : "name "}>
+          <div className={isDarkTheme ? "name  light" : "name "}>
             Hemant Nirmalkar
           </div>
-          <p className={isDarkTheme ? "desc-w black" : "desc-w"}>
+          <p className={isDarkTheme ? "desc-w light" : "desc-w"}>
             Hey there! This is Hemant, I'm a Fullstack developer. I primarily
             work in Javascript. I enjoy solving problems, building logics &
             designing stuffs.
@@ -25,7 +25,10 @@ const Hero = () => {
         </Fade>
         <Fade up duration={2000}>
           <p className="my-wrk-lnk">
-            <Link className="link-styles" to="/work">
+            <Link
+              className={isDarkTheme ? "link-styles light" : "link-styles"}
+              to="/work"
+            >
               {" "}
               MY WORK
               <i className="fas fa-arrow-right  mt-2 ml-2" />
@@ -42,7 +45,13 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-github fa-lg p-4  clk-f-a" />
+                <i
+                  className={
+                    isDarkTheme
+                      ? "fab fa-github fa-lg p-4  clk-f-a light"
+                      : "fab fa-github fa-lg p-4  clk-f-a"
+                  }
+                />
               </a>
               <a
                 className="link-styles"
@@ -50,7 +59,13 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-codepen fa-lg p-4  clk-f-a" />
+                <i
+                  className={
+                    isDarkTheme
+                      ? "fab fa-codepen fa-lg p-4  clk-f- light"
+                      : "fab fa-codepen fa-lg p-4  clk-f-a"
+                  }
+                />
               </a>
               <a
                 className="link-styles"
@@ -58,7 +73,13 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-linkedin-in fa-lg p-4  clk-f-a" />
+                <i
+                  className={
+                    isDarkTheme
+                      ? "fab fa-linkedin-in fa-lg p-4  clk-f-a light"
+                      : "fab fa-linkedin-in fa-lg p-4  clk-f-a"
+                  }
+                />
               </a>
               <a
                 className="link-styles"
@@ -66,7 +87,13 @@ const Hero = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fab fa-instagram fa-lg p-4  pr-lg-0 pt-lg-0 clk-f-a" />
+                <i
+                  className={
+                    isDarkTheme
+                      ? "fab fa-instagram fa-lg p-4  pr-lg-0 pt-lg-0 clk-f-a light"
+                      : "fab fa-instagram fa-lg p-4  pr-lg-0 pt-lg-0 clk-f-a"
+                  }
+                />
               </a>
             </div>
           </Fade>

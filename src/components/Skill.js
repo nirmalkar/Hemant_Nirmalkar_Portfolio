@@ -14,7 +14,7 @@ const Skill = () => {
   return (
     <div className="col-12 text-center">
       <Fade up duration={2000}>
-        <p className={isDarkTheme ? "f-s black" : "f-s"}>My Skills</p>
+        <p className={isDarkTheme ? "f-s light" : "f-s"}>My Skills</p>
       </Fade>
       <div className={"mt-5"}>
         <Fade up duration={2000}>

@@ -9,7 +9,7 @@ import { ThemeContext } from "../contexts/themeContext"
 const Main = () => {
   const { isDarkTheme } = useContext(ThemeContext)
   return (
-    <div className={isDarkTheme ? "dark" : "light"}>
+    <div className={isDarkTheme ? "dark" : "bg-white"}>
       <Hero />
       <div className="row no-gutters m-t-my-skills">
         <Skill />

@@ -14,7 +14,7 @@ const Work = () => {
   return (
     <div className="col-12 text-center m-t-my-work">
       <Fade up duration={2000}>
-        <p className={isDarkTheme ? "f-s black" : "f-s"}>My Work</p>
+        <p className={isDarkTheme ? "f-s light" : "f-s"}>My Work</p>
       </Fade>
       <div className="d-lg-flex justify-content-center m-3 m-xl-0">
         <Flip bottom duration={2000}>
@@ -34,7 +34,7 @@ const Work = () => {
                 src={Unsplash}
                 alt=""
               />
-              <p>Unsplash Api</p>
+              <p className={isDarkTheme ? "light" : ""}>Unsplash Api</p>
             </a>
           </div>
         </Flip>
@@ -55,7 +55,7 @@ const Work = () => {
                 src={Dog}
                 alt=""
               />
-              <p>Dog List</p>
+              <p className={isDarkTheme ? "light" : ""}>Dog List</p>
             </a>
           </div>
         </Flip>
@@ -76,14 +76,17 @@ const Work = () => {
                 src={Aim}
                 alt=""
               />
-              <p>Aim Career Institute</p>
+              <p className={isDarkTheme ? "light" : ""}>Aim Career Institute</p>
             </a>
           </div>
         </Flip>
       </div>
       <Fade up duration={2000}>
         <p className="my-wrk-lnk">
-          <Link className="link-styles" to="/work">
+          <Link
+            className={isDarkTheme ? "link-styles light" : "link-styles"}
+            to="/work"
+          >
             SEE MORE
             <i className="fas fa-arrow-right  mt-2 ml-2" />
           </Link>
