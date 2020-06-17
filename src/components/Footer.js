@@ -24,7 +24,7 @@ const Footer = () => {
         className={
           isDarkTheme
             ? "d-lg-none text-center p-5 light"
-            : "d-lg-none text-center p-5"
+            : "d-lg-none text-center p-5 black"
         }
       >
         <div className="row">
